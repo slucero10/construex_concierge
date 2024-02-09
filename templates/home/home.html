@@ -1,0 +1,215 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Construex Concierge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}" >
+    <link href="{% static 'css/home_styles.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="row gx-0 px-md-5 px-1 py-4 fixed-top bg-white">
+            <div class="col">
+                <img src="{% static 'img/logo.png' %}"
+                    alt="Construex Concierge Logo" style="max-width: 370px; width: 100%;">
+            </div>
+            <div class="col text-end">
+                <a href="#register-form" class="btn custom-btn-primary px-4">Regístrate Ahora</a>
+            </div>
+        </div>
+        <div class="main-banner" style="background-image: url({% static 'img/concierge_bg.jpg' %});">
+            <img src="{% static 'img/logo_lg.png' %}"
+                alt="Construex Concierge" style="max-width: 800px; width: 100%;">
+            <h2 class="fs-1 fw-light text-white">Tu equipo de compras digital.<br>
+                Inteligencia de compra para constructores.</h2>
+        </div>
+        <div class="description-container">
+            Optimiza tus compras digitales con nuestro equipo especializado. Ofrecemos inteligencia de compras diseñada
+            para constructores.
+            <br>Mediante análisis de datos e inteligencia artificial, ayudamos a los constructores a
+            ahorrar tiempo y dinero.
+        </div>
+        <div class="container py-5 text-center">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M49.4606 56.0016C47.8477 56.0016 46.2284 55.3848 44.998 54.1576L23.3541 32.5702C20.8869 30.1095 20.8869 26.1226 23.3541 23.6619L45.2211 1.84558C47.6883 -0.615192 51.6856 -0.615192 54.1528 1.84558C56.62 4.30635 56.62 8.29318 54.1528 10.7539L36.7484 28.1129L53.9297 45.2492C56.3969 47.71 56.3969 51.6968 53.9297 54.1576C52.6992 55.3848 51.0799 56.0016 49.467 56.0016H49.4606Z"
+                    fill="#96D7E6" />
+                <path
+                    d="M16.1373 22.689C14.5244 22.689 12.9051 22.0722 11.6746 20.845L1.85041 11.0464C-0.616803 8.58566 -0.616803 4.59883 1.85041 2.13806C4.31762 -0.322712 8.31489 -0.322712 10.7821 2.13806L20.6063 11.9366C23.0735 14.3974 23.0735 18.3842 20.6063 20.845C19.3759 22.0722 17.7566 22.689 16.1437 22.689H16.1373Z"
+                    fill="#F16722" />
+                <path
+                    d="M6.31307 55.9317C4.70014 55.9317 3.08083 55.3149 1.85041 54.0877C-0.616803 51.6269 -0.616803 47.6401 1.85041 45.1793L11.6746 35.3807C14.1418 32.92 18.1391 32.92 20.6063 35.3807C23.0735 37.8415 23.0735 41.8283 20.6063 44.2891L10.7821 54.0877C9.55169 55.3149 7.93238 55.9317 6.31944 55.9317H6.31307Z"
+                    fill="#353434" />
+            </svg>
+            <h3 class="mt-3">¿Por qué Construex Concierge?</h3>
+            <div class="row my-5">
+                <div class="col-12 col-md-4 px-4">
+                    <img src="{% static 'img/time.png' %}"
+                        alt="Ahorra tiempo" style="width: 148px;">
+                    <p class="benefit-title">Economiza Tiempo</p>
+                    <p class="benefit-description">No perderás el tiempo buscando tercerizadores. Aquí encontrarás un
+                        servicio completo. </p>
+                </div>
+                <div class="col-12 col-md-4 px-4">
+                    <img src="{% static 'img/money.png' %}"
+                        alt="Ahorra dinero" style="width: 148px;">
+                    <p class="benefit-title">Ahorra dinero</p>
+                    <p class="benefit-description">Con Construex Concierge, obtendrás cotizaciones y opciones en
+                        cuestión de minutos.</p>
+                </div>
+                <div class="col-12 col-md-4 px-4">
+                    <img src="{% static 'img/ai.png' %}"
+                        alt="Inteligencia artificial" style="width: 148px;">
+                    <p class="benefit-title">Inteligencia Artificial</p>
+                    <p class="benefit-description">La inteligencia artificial personaliza, analizar patrones de compra y
+                        mejorar la experiencia.</p>
+                </div>
+            </div>
+        </div>
+        <div class="banner text-end" style="background-image: url({% static 'img/best_choice_banner.jpg' %});">
+            <div class="container">
+                <p class="fs-3 mb-2" style="color: #97D8E7;">LA MEJOR DECISIÓN</p>
+                <p class="fs-1 text-white mb-0">entre todos los provedores.</p>
+            </div>
+        </div>
+        <div class="container pt-5 pb-2" id="register-form">
+            <div class="form-container">
+                <div class="form-wrapper">
+                    <h3>Regístrate</h3>
+                    <p>Ingresa tus datos para empezar a utilizar tu perfil</p>
+                    <form class="row mt-3 g-3">
+                        <div class="col-12">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="name">
+                                <label for="name">Nombre y Apellido</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="company" placeholder="company">
+                                <label for="company">Nombre de la empresa</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="phone" placeholder="phone">
+                                <label for="phone">Teléfono</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="email">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn custom-btn-primary w-100">Registrate</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="banner mb-5" style="background-image: url({% static 'img/services_banner.jpg' %});">
+            <div class="container text-white">
+                <p class="fs-1 mb-0">Servicio de primera</p>
+                <p class="fs-5 mb-2 fw-light" style="font-size: 16px; margin-bottom: 5px; font-weight: 300;">Te ayudamos a encontrar los mejores proveedores de acabados,<br> materiales, iluminación, decoración, muebles y más.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="py-5 text-white custom-bg-black">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-12 col-md-auto">
+                    <a href="/">
+                        <img src="{% static 'img/logo_white.png' %}"
+                            alt="Construex Concierge" style="width: 157px;">
+                    </a>
+                    <p class="fw-light mt-2">© Construex 2024</p>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <h4>Contáctanos</h4>
+                    <h5>México</h5>
+                    <p class="pb-3 fw-light">Cervantes Saavedra 169,<br> Piso 12, Oficina 112-113, <br>Colonia Granada, Miguel<br>
+                        Hidalgo, C.P. 11520, <br>CDMX</p>
+                    <div>
+                        <a href="mailto:info@constru-ex.com" title="Contactos Construex"
+                            class="text-decoration-none text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 mr-2">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg> info@constru-ex.com
+                        </a>
+                    </div>
+                    <div>
+                        <a href="tel:+52 55 7408 4183" title="Teléfono Construex"
+                            class="text-decoration-none text-white">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                class="w-4 h-4 mr-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
+                                </path>
+                            </svg> +52 55 7408 4183
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <h4 class="pb-2">Nosotros</h4>
+                    <ul>
+                        <li><a href="/exhibidores/all" class="text-decoration-none text-white">Exhibidores</a></li>
+                        <li><a href="/contenidos/terminos-condiciones" class="text-decoration-none text-white">Términos
+                                y condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="col text-center">
+                    <h4 class="pb-4">Síguenos en nuestras redes sociales</h4>
+                    <div class="flex items-center justify-center">
+                        <a href="https://www.facebook.com/construex" target="_blank" title="Construex en Facebook"><svg
+                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                class="fs-3 text-decoration-none text-white me-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/construex" target="_blank"
+                            title="Construex en Instagram"><svg stroke="currentColor" fill="currentColor"
+                                stroke-width="0" viewBox="0 0 16 16" class="fs-3 text-decoration-none text-white me-3" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/construex" target="_blank"
+                            title="Construex en Linkedin"><svg stroke="currentColor" fill="currentColor"
+                                stroke-width="0" viewBox="0 0 16 16" class="fs-3 text-decoration-none text-white" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
